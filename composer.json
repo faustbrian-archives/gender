@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/genderapi-php-client",
     "description": "A Gender API Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-gender-api", "gender-api", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "gender api", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
