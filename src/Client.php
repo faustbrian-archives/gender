@@ -16,6 +16,21 @@ use BrianFaust\Http\Http;
 class Client
 {
     /**
+     * @var string
+     */
+    private $key;
+
+    /**
+     * Create a new client instance.
+     *
+     * @param string $key
+     */
+    public function __construct(string $key)
+    {
+        $this->key = $key;
+    }
+
+    /**
      * Create a new API service instance.
      *
      * @param string $name
@@ -24,7 +39,7 @@ class Client
      */
     public function api(string $name): API\AbstractAPI
     {
-        $client = Http::withBaseUri('https://gender-api.com/');
+        $client = Http::withBaseUri("https://gender-api.com/?key={$this->key}");
 
         $class = "BrianFaust\\GenderAPI\\API\\{$name}";
 
