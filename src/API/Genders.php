@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Gender API PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\GenderAPI\API;
+namespace Plients\GenderAPI\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Genders extends AbstractAPI
 {
     /**
      * @param string $name
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function findByName(string $name): HttpResponse
     {
@@ -31,7 +31,7 @@ class Genders extends AbstractAPI
      * @param string $name
      * @param string $country
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function findByCountry(string $name, string $country): HttpResponse
     {
@@ -42,7 +42,7 @@ class Genders extends AbstractAPI
      * @param string $name
      * @param string $ip
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function findByIp(string $name, string $ip): HttpResponse
     {
@@ -53,7 +53,7 @@ class Genders extends AbstractAPI
      * @param string $name
      * @param string $language
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function findByLanguage(string $name, string $language): HttpResponse
     {
@@ -63,7 +63,7 @@ class Genders extends AbstractAPI
     /**
      * @param string $email
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function findByEmail(string $email): HttpResponse
     {
@@ -73,7 +73,7 @@ class Genders extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function find(array $parameters): HttpResponse
     {
